@@ -4,7 +4,8 @@
 
 # EXERCICIO 38
 
-# A) 
+# A) Desenvolver um programa que faça a contagem de 0 até 100 e imprima na tela,
+na horizontal.
 #include<stdio.h>
 #include<stdlib.h>
 int main()
