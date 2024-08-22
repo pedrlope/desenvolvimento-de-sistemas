@@ -1,4 +1,159 @@
-# desenvolvimento-de-sistemas
+# DESENVOLVIMENTO DE SISTEMAS
+
+
+
+# EXERCICIO 38
+
+# A) 
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int valor, peso, contadorpeso, contador4, contador, contadorpeso2;
+    float altura , contador5, somadaaltura;
+for(contador=0;contador<=100;contador++)
+printf("%d ",contador);
+return (0);
+}
+# B) 
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int contador;
+for(contador=10;contador<=50;contador++)
+printf("%d ",contador);
+return (0);
+}
+# C) 
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int contador;
+for(contador=10;contador<=100;contador++)
+printf("%d \n",contador);
+return (0);
+}
+# D) 
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int contador;
+for(contador=20;contador<=40;contador++)
+if(contador %2 ==0)
+printf("%d ",contador);
+return (0);
+}
+# E)
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int contador;
+for(contador=10;contador<=60;contador++)
+if(contador %2 !=0)
+printf("%d \n",contador);
+return (0);
+}
+# F)
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int contador;
+for(contador=39;contador<=100;contador++)
+if(contador %3 ==0)
+printf("%d ",contador);
+return (0);
+}
+# G)
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int contador;
+for(contador=0;contador<=100;contador++)
+if(contador %5 ==0)
+printf("%d ",contador);
+return (0);
+}
+# H)
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int contador;
+for(contador=100;contador>=0;contador--)
+printf("%d ",contador);
+return (0);
+}
+# I)
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int contador;
+for(contador=50;contador>=0;contador--)
+if(contador%2 ==0)
+printf("%d ",contador);
+return (0);
+}
+# J)
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+int contador, contadorsoma, contador2;
+contadorsoma =0;
+contador2=0;
+for(contador=1;contador<=200;contador++)
+if (contador%2 !=0 && contador%3 ==0)
+contador2++;
+printf("%f ", 105.0909090909*contador2);
+}
+# K)
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+int contador;
+for(contador=1;contador<=100;contador++)
+if(contador%2 !=0)
+printf("%d ",contador);
+for(contador=100;contador>=1;contador--)
+if(contador%2 !=0)
+printf("%d ",contador);
+return (0);
+}
+# L)
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+int contador;
+for(contador=10;contador<=50;contador++)
+if(contador%2 ==0)
+printf("%d par",contador);
+else
+    printf("%d impar", contador);
+}
+# M)
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+int contador, contadorsoma;
+contadorsoma =0;
+for(contador=1;contador<=50;contador++)
+contadorsoma+=contador;
+printf("%d", contadorsoma);
+}
+
+
+
+
 
 # SISTEMA PARA FILMES E CINEMA :
 # FALTANDO UMA LIMPA DE TELA, E QUE O PROGRAMA PARE QUANDO ESGOTE
