@@ -1,0 +1,90 @@
+void setup() { // put your setup code here, to run once: 
+pinMode (8, OUTPUT); // VERDE PEDESTRE
+pinMode (12, OUTPUT); // VERMELHA CARRO 
+pinMode (11, OUTPUT); // AMARELA 
+pinMode (10, OUTPUT);// VERDE CARRO 
+pinMode (9, OUTPUT); // VERMELHA PEDESTRE }
+
+void loop() 
+{ 
+manhafunc();
+tardefunc(); 
+madrufunc(); 
+} // CONTADOR MANHÃ 
+void manhafunc(){ 
+int contador, manha, tarde, madru; 
+contador=0; 
+manha=0; 
+do{ 
+manha++; 
+digitalWrite (8, HIGH); 
+digitalWrite (12, HIGH);
+delay (20000);
+do{ 
+contador++; 
+digitalWrite (8, LOW); 
+digitalWrite (9, HIGH);
+delay (500); // PISCA LUZ VERMELHA PEDESTRE 
+digitalWrite (9, LOW); 
+delay (500); 
+digitalWrite (9, HIGH);
+delay (500); 
+}while
+(contador<4); 
+contador=0; // FIM PISCA // LIGA VERDE CARRO E LIGA VERMEHO PEDESTRE 
+digitalWrite (12, LOW); 
+digitalWrite (9, HIGH); 
+digitalWrite (10, HIGH);
+delay (15000);
+digitalWrite (10, LOW); 
+digitalWrite (9, HIGH); 
+digitalWrite (11, HIGH); 
+delay (3000);
+digitalWrite (11, LOW); 
+digitalWrite (9, LOW); 
+}while(manha<2); } // CONTADOR TARDE 
+void tardefunc(){
+int contador, manha, tarde, madru; 
+contador=0; 
+tarde=0; 
+do{ 
+tarde++;
+digitalWrite (8, HIGH);
+digitalWrite (12, HIGH); 
+delay (8000);
+do{ 
+contador++; 
+digitalWrite (8, LOW);
+digitalWrite (9, HIGH); 
+delay (300); // PISCA LUZ VERMELHA PEDESTRE
+digitalWrite (9, LOW);
+delay (300); 
+digitalWrite (9, HIGH); 
+delay (300); 
+}while
+(contador<4); 
+contador=0; // FIM PISCA // LIGA VERDE CARRO E LIGA VERMEHO PEDESTRE 
+digitalWrite (12, LOW); 
+digitalWrite (9, HIGH);
+digitalWrite (10, HIGH);
+delay (8000);
+digitalWrite (10, LOW);
+digitalWrite (9, HIGH); 
+digitalWrite (11, HIGH);
+delay (2000); 
+digitalWrite (11, LOW); 
+digitalWrite (9, LOW);
+}while(tarde<2); } // CONTADOR MADRUGADA 
+void madrufunc(){ 
+int contador, manha, tarde, madru;
+contador=0;
+madru=0; 
+do{ 
+madru++; 
+digitalWrite (11, HIGH);
+digitalWrite (9, HIGH);
+delay (2000); 
+digitalWrite (11, LOW); 
+digitalWrite (9, LOW);
+delay (1000);
+}while(madru<10); }
