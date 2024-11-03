@@ -1433,6 +1433,178 @@ if (opcao6 == 3)
     printf("R$78,99");
 }
 
+# EXERCICIO 40
+#include "stdio.h"
+#include <locale.h>
+int main()
+
+{
+
+//Permite o programa a ficar em português
+setlocale(LC_ALL, "Portuguese");
+printf("Utilizando acentuação da língua portuguesa! \n\n");
+
+    FILE *arq;
+    int op = 1;
+    char texto_linha[30];
+
+    arq = fopen("formulario.txt", "w");
+    printf("\nNome completo: ");
+    fflush(stdin);
+    scanf("%[^\n]s", &texto_linha);
+    fputs(texto_linha, arq);
+    fclose(arq);
+
+
+    FILE *arq2;
+    int op2 = 1;
+    char texto_linha2[30];
+
+    arq2 = fopen("formulario.txt", "w");
+    printf("\nEndereço: ");
+    fflush(stdin);
+    scanf("%[^\n]s", &texto_linha2);
+    fputs(texto_linha, arq2);
+    fclose(arq2);
+
+
+      FILE *arq3;
+    int op3 = 1;
+    char texto_linha3[30];
+
+    arq3 = fopen("formulario.txt", "w");
+    printf("\Número: ");
+    fflush(stdin);
+    scanf("%[^\n]s", &texto_linha3);
+    fputs(texto_linha, arq3);
+    fclose(arq3);
+
+
+      FILE *arq4;
+    int op4 = 1;
+    char texto_linha4[30];
+
+    arq4 = fopen("formulario.txt", "w");
+    printf("\Telefone: ");
+    fflush(stdin);
+    scanf("%[^\n]s", &texto_linha4);
+    fputs(texto_linha, arq4);
+    fclose(arq4);
+
+
+         FILE *arq5;
+    int op5 = 1;
+    char texto_linha5[30];
+
+    arq5 = fopen("formulario.txt", "w");
+    printf("\Bairro: ");
+    fflush(stdin);
+    scanf("%[^\n]s", &texto_linha5);
+    fputs(texto_linha, arq5);
+    fclose(arq5);
+
+
+     FILE *arq6;
+    int op6 = 1;
+    char texto_linha6[30];
+
+    arq6 = fopen("formulario.txt", "w");
+    printf("\Cidade: ");
+    fflush(stdin);
+    scanf("%[^\n]s", &texto_linha6);
+    fputs(texto_linha, arq6);
+    fclose(arq6);
+
+         FILE *arq7;
+    int op7 = 1;
+    char texto_linha7[30];
+
+    arq7 = fopen("formulario.txt", "w");
+    printf("\Estado: ");
+    fflush(stdin);
+    scanf("%[^\n]s", &texto_linha7);
+    fputs(texto_linha, arq7);
+    fclose(arq7);
+
+printf("\n o Nome Completo é : %s",texto_linha);
+printf("\n o Endereço é : %s",texto_linha2);
+printf("\n o Número é : %s",texto_linha3);
+printf("\n o Telefone é : %s",texto_linha4);
+printf("\n o Bairro é : %s",texto_linha5);
+printf("\n a Cidade é : %s",texto_linha6);
+printf("\n o Estado é : %s",texto_linha7);
+}
+# EXERCICIO 41
+# A)
+#include<stdio.h>
+int main()
+{
+
+
+int numero[5], cont, somar=0;
+
+//Contar número de entradas
+for(cont=0; cont<5;cont++)
+{
+printf("Entre com o numero na posicao do vetor %d: ", cont);
+scanf("%d", &numero[cont]);
+}
+printf("\nos valores sao");
+for(cont=0; cont<5; cont++)
+printf(" %d", numero[cont]);
+
+return 0;
+}
+
+# B)
+#include<stdio.h>
+int main()
+{
+
+
+int numero[5], cont, somar=0;
+
+//Contar número de entradas
+for(cont=0; cont<5;cont++)
+{
+printf("Digite o numero na posicao %d: ", cont);
+scanf("%d", &numero[cont]);
+}
+
+//contar número da posição de alocação
+for (cont=0;cont<5;cont++)
+{
+somar=somar+numero[cont];
+}
+printf("\n Soma : %d\n", somar);
+return 0;
+}
+
+# C)
+#include<stdio.h>
+int main()
+{
+
+
+int numero[5], cont, somar=0, media=0;
+
+//Contar número de entradas
+for(cont=0; cont<5;cont++)
+{
+printf("Digite o valor das notas %d: ", cont+1);
+scanf("%d", &numero[cont]);
+}
+
+//contar número da posição de alocação
+for (cont=0;cont<5;cont++)
+{
+somar=somar+numero[cont];
+}
+media=media+somar/cont;
+printf("a media dos aluno eh de: %d", media);
+return 0;
+}
+
 # SISTEMA PARA FILMES E CINEMA :
 # FALTANDO UMA LIMPA DE TELA, E QUE O PROGRAMA PARE QUANDO ESGOTE
 #include <locale.h> 
